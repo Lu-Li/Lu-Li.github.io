@@ -1,0 +1,90 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Lu Li</title>
+<link rel="stylesheet" type="text/css" href="css/style.css"/>
+<script type="text/javascript" src="js/jquery.js"></script>
+</head>
+
+<body>
+<div class="wrap">
+	<div class="hgroup">
+		<h2>Lu Li</h2>
+        <h4>Welcome to Tao Lin's personal website!</h4>
+    </div>
+    <div class="nav clearfix">
+    	<ul>
+        	<li>
+            	<a>Home</a>
+            </li>
+            <li>
+            	<a>Project</a>
+            <div class="drop-down">
+                	<ul>
+                    	<li><a>CMCC Supply chain system</a></li><!--中国移动供应链系统-->
+                        <li><a>Electronic information platform</a></li><!--电子信息话平台系统-->
+                        <li><a>Unionpay payment system</a></li><!--银联支付系统-->
+                    </ul>
+                </div>
+            </li>
+            <li>
+            	<a>Internship</a>
+            <div class="drop-down">
+                	<ul>
+                    	<li><a>IBM company</a></li>
+                        <li><a>Oracle company</a></li>
+                    </ul>
+                </div>
+            </li>
+            <li><a>Resume</a></li>
+            <li><a>code</a></li>
+            <li><a>Activity</a></li>
+            <li><a>Contact</a></li>
+        </ul>
+    </div>
+    <div class="content">
+    	<div class="sub-con">
+        	<div class="sub-detail">
+            	wwwwwwwwwwwwwwwwwoking, biking and basically every well-known game of Blizzard Entertainment and Electronic Arts.</p>
+                
+            </div>
+        </div>
+        <div class="sub-con" style="display:none;">2</div>
+        <div class="sub-con" style="display:none;">3</div>
+        <div class="sub-con" style="display:none;">4</div>
+        <div class="sub-con" style="display:none;">4314444444444444444444444444444444</div>
+        <div class="sub-con" style="display:none;">6</div>
+        <div class="sub-con" style="display:none;"></div>
+        <div class="sub-con" style="display:none;">
+        	<ul>
+            	<li>
+                	<label class="fl">Address:</label>
+                    <span class="fl">河南省洛阳市河南科技大学</span>
+                </li>
+                <li>
+                	<label class="fl">Telephone:</label>
+                    <span class="fl">12545454455458784</span>
+                </li>
+                <li>
+                	<label class="fl">Address:</label>
+                    <span class="fl">河南省洛阳市河南科技大学</span>
+                </li>
+                <li>
+                	<label class="fl">Address:</label>
+                    <span class="fl"><A href="英语.pdf"> 河南省洛阳市河南科技</A>大学</span>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="footer">Designed by Tao Lin | All rights reserved</div>
+</div>
+<script>
+	var tab_nav=$('.nav>ul>li');
+	tab_nav.click(function(){
+		var index=tab_nav.index(this);
+		$('.content .sub-con').eq(index).fadeIn().siblings().fadeOut();	
+	})
+</script>
+</body>
+</html>

@@ -1,0 +1,108 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>测试</title>
+<link rel="stylesheet" type="text/css" href="css/style.css"/>
+<script type="text/javascript" src="js/jquery.js"></script>
+</head>
+
+<body>
+<div class="wrap detail">
+	<div class="hgroup">
+		<h2>测试页面</h2>
+        <h4>Welcome to Tao Lin's personal website!</h4>
+    </div>
+    <div class="nav clearfix">
+    	<ul>
+        	<li>
+            	<a>Home</a>
+                <div class="drop-down">
+                	<ul>
+                    	<li><a href="detail.html">aaaaaaaa</a></li>
+                        <li><a href="英语.pdf">Information Retrieval</a></li>
+                        <li><a href="lilu.html">Information Retrieval</a></li>
+                        <li><a>Information Retrieval</a></li>
+                        <li><a>Information Retrieval</a></li>
+                    </ul>
+                </div>
+            </li>
+            <li>
+            	<a>Project</a>
+            <div class="drop-down">
+                	<ul>
+                    	<li><a>Information Retrieval</a></li>
+                        <li><a>Information Retrieval</a></li>
+                        <li><a  href="cy.html">11111</a></li>
+                        <li><a>Information Retrieval</a></li>
+                        <li><a>Information Retrieval</a></li>
+                    </ul>
+                </div>
+            </li>
+            <li>
+            	<a>Internship</a>
+            <div class="drop-down">
+                	<ul>
+                    	<li><a>Information Retrieval</a></li>
+                        <li><a>Information Retrieval</a></li>
+                        <li><a>Information Retrieval</a></li>
+                        <li><a>Information Retrieval</a></li>
+                        <li><a>Information Retrieval</a></li>
+                    </ul>
+                </div>
+            </li>
+            <li><a>Resume</a></li>
+            <li><a>Paper</a></li>
+            <li><a>code</a></li>
+            <li><a>Activity</a></li>
+            <li><a>Contact</a></li>
+        </ul>
+    </div>
+    <div class="content">
+    	<div class="sub-con">
+        	<div class="sub-detail detail-con">
+            	<h3>我家</h3>
+        <div class="detail-txt">
+        	<p>Hi there. I’m Tao Lin — a ball games/sports nerd, music/ computer rapper, and American series/ movies fan. Outside of academia and working, I love cooking, biking and basically every well-known game of Blizzard Entertainment and Electronic Arts.</p>
+            <p>Hi there. I’m Tao Lin — a ball games/sports nerd, music/ computer rapper, and American series/ movies fan. Outside of academia and working, I love cooking, biking and basically every well-known game of Blizzard Entertainment and Electronic Arts.</p>
+            <p>Hi there. I’m Tao Lin — a ball games/sports nerd, music/ computer rapper, and American series/ movies fan. Outside of academia and working, I love cooking, biking and basically every well-known game of Blizzard Entertainment and Electronic Arts.</p>
+        </div>
+            </div>
+        </div>
+        <div class="sub-con" style="display:none;">2</div>
+        <div class="sub-con" style="display:none;">3</div>
+        <div class="sub-con" style="display:none;">4</div>
+        <div class="sub-con" style="display:none;">5</div>
+        <div class="sub-con" style="display:none;">6</div>
+        <div class="sub-con" style="display:none;">
+        	<ul>
+            	<li>
+                	<label class="fl">Address:</label>
+                    <span class="fl">河南省洛阳市河南科技大学</span>
+                </li>
+                <li>
+                	<label class="fl">Telephone:</label>
+                    <span class="fl">12545454455458784</span>
+                </li>
+                <li>
+                	<label class="fl">Address:</label>
+                    <span class="fl">河南省洛阳市河南科技大学</span>
+                </li>
+                <li>
+                	<label class="fl">Address:</label>
+                    <span class="fl">河南省洛阳市河南科技大学</span>
+                </li>
+            </ul>
+        </div>
+    </div>
+     <div class="footer">Designed by Tao Lin | All rights reserved</div>
+</div>
+<script>
+	var tab_nav=$('.nav>ul>li');
+	tab_nav.click(function(){
+		var index=tab_nav.index(this);
+		$('.content .sub-con').eq(index).fadeIn().siblings().fadeOut();	
+	})
+</script>
+</body>
+</html>

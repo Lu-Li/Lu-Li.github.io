@@ -1,0 +1,100 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Lu Li</title>
+<link rel="stylesheet" type="text/css" href="css/style.css"/>
+<script type="text/javascript" src="js/jquery.js"></script>
+</head>
+
+<body>
+<div class="wrap">
+	<div class="hgroup">
+		<h2>Lu Li</h2>
+        <h4>Welcome to Li Lu's personal website!</h4>
+    </div>
+    <div class="nav clearfix">
+    	<ul>
+        	<li>
+            	<a href="index.html">Home</a>
+            </li>
+            <li>
+            	<a href="data_mining.html">Project</a>
+            <div class="drop-down">
+                	<ul>
+                    	<li><a href="data_mining.html">Data Mining</a></li>
+                        <li><a href="cloud_computing.html">Cloud Computing</a></li>
+                    </ul>
+                </div>
+            </li>
+            <li>
+            	<a href="IBM.html">Internship</a>
+            <div class="drop-down">
+                	<ul>
+                    	<li><a href="IBM.html">IBM</a></li>
+                        <li><a href="oracle.html">Oracle</a></li>
+                    </ul>
+                </div>
+            </li>
+           <li><a href="document/LuLi_Resume.pdf">Resume</a></li>
+            <li><a href="https://github.com/Lu-Li">code</a></li>
+            <li><a href="activity.html">Activity</a></li>
+            <li><a>Contact</a></li>
+        </ul>
+    </div>
+        <div class="content" style="height:auto;">
+    	<div class="sub-con">
+        	<div class="sub-detail" style=" margin-top:-50px; width:700px; padding-left:60px;">
+             <div style="text-align:center; font-size:25px;">Correlation between Various Types of Service</div><br />
+            	<p>&nbsp&nbsp&nbsp&nbsp&nbsp&nbspVarious types of service are closely connected to each other today. A crash of one service can cause chain reaction which result in a series of other services crash down. 
+				<p>&nbsp&nbsp&nbsp&nbsp&nbsp&nbspThe crash of AWS from Amazon on Christmas Eve of 2013 cause Netflix’s downloads service break down. iCloud’s crash on October 10th , 2012 cause problems on iMessage, Apps Store, Game Center. More seriously, the downtime of Google service during from 6:50 to 6:55 on August 17th 2013 led to the 40% decline of global traffics, including YouTube, Google Drive and Gmail. This means Google service have some influences on the other services.
+				<p>&nbsp&nbsp&nbsp&nbsp&nbsp&nbspThis project is to propose a model to evaluation the correlation between each service to help built a more reliable service structure, in which we can improve communication network’s stability. The data set we used are provided by China Unicom and covers a large user base over a rather long time period, as well as include data on connection opportunities encountered24 hours a day.
+				<p>&nbsp&nbsp&nbsp&nbsp&nbsp&nbspThe first part of my task is to install, configure, and maintain a small-scale Hadoop cluster. I read through some reference books on Linux OS and Hadoop and found other solutions online to get everything setup. The six datanodes are showed in the picture 1. 
+            </div>
+            <div style="width:700px; padding-left:110px;"><img src="photo/图片1.png" width="600px;" height="350px;"><br><div style=" font-size:9px; padding-left:280px;">picture 1</div></div>
+            <br />
+            <div style="width:700px; padding-left:60px;"><p>&nbsp&nbsp&nbsp&nbsp&nbsp&nbspThen responsible for finding out the inner link between the communication features and service transfer probability. I used Apriori Algorithm and separate transactions into Factor Transaction and Consequence Transaction.
+				 <p>&nbsp&nbsp&nbsp&nbsp&nbsp&nbspFor example, features are defined in table 1:</div>
+            <div style="width:700px; padding-left:110px;"><img src="photo/photo2.png" width="600px;" height="300px;" /><br><div style=" font-size:9px; padding-left:280px;">table 1</div></div>
+             <div style="width:700px; padding-left:60px;"><p>&nbsp&nbsp&nbsp&nbsp&nbsp&nbspThe first step of Apriori is to count up the number of occurrences, called the support, of each member item separately, by scanning the database a first time. The next step is to generate a list of all pairs of the frequent items. The sample results are showed in picture 2, 3, 4</div>
+             <div style="width:700px; padding-left:60px;"><img src="photo/photo3.png" width="225px;"><img src="photo/photo4.png" width="225px;"><img src="photo/photo5.png" width="225px;"><br><div style=" font-size:9px; padding-left:90px;">picture 2&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp picture 3 &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsppicture 4</div></div><br />
+          <div style="width:700px; padding-left:60px;"><p>&nbsp&nbsp&nbsp&nbsp&nbsp&nbspWe used Gephi to draw a service relationship graph(picture 5) using the results we got to pursue the goal of network visualizations. The number in the graph represents different type of services. The size of the circles and lines represents the amount of service transfer probability. </div>   
+            
+            
+        </div>
+        <div class="sub-con" style="display:none;">2</div>
+        <div class="sub-con" style="display:none;">3</div>
+        <div class="sub-con" style="display:none;">4</div>
+        <div class="sub-con" style="display:none;"></div>
+        <div class="sub-con" style="display:none;"></div>
+        <div class="sub-con" style="display:none; margin-left:200px;">
+        	<ul>
+            	<li>
+                	<label class="fl">Address:</label>
+                    <span class="fl">Room 260, Student Apartment 6,</br>
+Beijing University of Posts and Telecommunications,</br>
+No.10 Xi Tu Cheng Road,</br>
+Beijing, 100876, China</p></span>
+                </li>
+                <li>
+                	<label class="fl">Telephone:</label>
+                    <span class="fl">18810466253</span>
+                </li>
+                <li>
+                	<label class="fl">Email:</label>
+                   <span class="fl">lilu.bupt.cn@gmail.com</span>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="footer">Designed by Lu Li | All rights reserved</div>
+</div>
+<script>
+	var tab_nav=$('.nav>ul>li');
+	tab_nav.click(function(){
+		var index=tab_nav.index(this);
+		$('.content .sub-con').eq(index).fadeIn().siblings().fadeOut();	
+	})
+</script>
+</body>
+</html>

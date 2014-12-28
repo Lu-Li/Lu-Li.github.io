@@ -1,0 +1,99 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Lu Li</title>
+<link rel="stylesheet" type="text/css" href="css/style.css"/>
+<script type="text/javascript" src="js/jquery.js"></script>
+</head>
+
+<body>
+<div class="wrap">
+	<div class="hgroup">
+		<h2>Lu Li</h2>
+        <h4>Welcome to Li Lu's personal website!</h4>
+    </div>
+    <div class="nav clearfix">
+    	<ul>
+        	<li>
+            	<a href="index.html">Home</a>
+            </li>
+            <li>
+            	<a href="data_mining.html">Project</a>
+            <div class="drop-down">
+                	<ul>
+                    <li><a href="data_mining.html">Data Mining</a></li>
+                        <li><a href="cloud_computing.html">Cloud Computing</a></li>
+                    </ul>
+                </div>
+            </li>
+            <li>
+            	<a href="IBM.html">Internship</a>
+            <div class="drop-down">
+                	<ul>
+                    	<li><a href="IBM.html">IBM</a></li>
+                        <li><a href="oracle.html">Oracle</a></li>
+                    </ul>
+                </div>
+            </li>
+           <li><a href="document/LuLi_Resume.pdf">Resume</a></li>
+           <li><a href="https://github.com/Lu-Li">code</a></li>
+           <li><a href="activity.html">Activity</a></li>
+            <li><a>Contact</a></li>
+        </ul>
+    </div>
+    <div class="content" style="height:auto;">
+    	<div class="sub-con">
+        	<div class="sub-detail" style=" margin-top:-50px; width:700px; padding-left:60px;">
+             <div style="text-align:center; font-size:25px;">Reconfigurable Cloud Computing Platform and MapReduce performance optimization</div><br />
+            	<p>&nbsp&nbsp&nbsp&nbsp&nbsp&nbspI was impressed with the computing power of Hadoop during that previous project, but I also became aware of some of its performance limitations. Therefore, I pursued an opportunity to do research on reconfigurable cloud computing platforms at Tsinghua University’s Advanced Mobile Computing Technology center. This was an excellent opportunity because this cooperative project with Imperial College London provided me with an international vision and exposed me to other advanced scientific research. 
+				<p>&nbsp&nbsp&nbsp&nbsp&nbsp&nbspFrom my previous project, I knew that the current Hadoop implementation assumes that computing nodes in a cluster are homogeneous in nature, so its task scheduler has a slot-based coarse-grain resource allocator as what showed in picture 1 and ignored the performance bottlenecks or resource competitions which can obviously reduce the performance of Hadoop cluster. Hadoop resources can be classified into CPU, memory, disk I/O and network bandwidth. Hence MapReduce workloads can be classified into different categories according to the type of resource they mainly consume. If any resource reaches its bottleneck, it forces other resources to wait, and consequently reduce the overall performance. Therefore, balanced resource utilization as showed in picture 2 is the key to achieve high performance.
+                </div>
+            <div style="padding-left:60px;"><img src="photo/picture1.jpg" width="320px;" height="180">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+            <img src="photo/picture2.jpg" width="320px;" height="180"/><br><div style=" font-size:9px; padding-left:130px;">picture 1&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsppicture 2</div></div>
+            <br />
+            <div style="width:700px; padding-left:60px;"><p>&nbsp&nbsp&nbsp&nbsp&nbsp&nbspFor example, the map/reduce program that estimates Pi using monte-carlo method requires as much computation resource as possible leading to high CPU utilization with light disk I/O. Therefore, Pi program is typically CPU intensive, and CPU resource is the performance bottleneck. However, TeraSort, a map/reduce program that sorts the data into a total order shows heavy disk I/O and light CPU utilization which is totally different from Pi. So TeraSort is disk I/O intensive, and disk I/O is the bottleneck.
+<p>&nbsp&nbsp&nbsp&nbsp&nbsp&nbspOur project is to utilize reconfigurable processor on the high CPU utilization program to reduce the bottleneck and optimize MapReduce performance. The typical architecture of a reconfigurable processor is a main controller coupled with reconfigurable hardware, whose major feature is that the reconfigurable hardware can implement different functions. The hardware structure of reconfigurable processor is showed in picture 3.</div>
+ <div style="width:700px; padding-left:110px;"><img src="photo/picture3.png" width="600px;" height="300px;" /><br><div style=" font-size:9px; padding-left:280px;">picture 3</div></div>
+ <br />
+ 	<div style="width:700px; padding-left:60px;"><p>&nbsp&nbsp&nbsp&nbsp&nbsp&nbspThe process of submitting a mapreduce job is showed in picture 4. After submission, what is required is showed in picture 5. After reading a lot of source code for the MapReduce programming model of Hadoop, I came up with the task scheduling algorithms that can arrange some computing intensive programs to some RPU based datanodes while allocate some other kinds of programs to some common datanodes.</div>
+    <div style="width:700px; padding-left:60px;"><img src="photo/picture4.png" width="320px;" height="180px;" />&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+    <img src="photo/picture5.jpg" width="320px;" height="180px;" /><br><div style=" font-size:9px; padding-left:130px;">picture 4&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsppicture 5</div></div>
+        </div>
+        
+        <div class="sub-con" style="display:none;">2</div>
+        <div class="sub-con" style="display:none;">3</div>
+        <div class="sub-con" style="display:none;">4</div>
+        <div class="sub-con" style="display:none;"></div>
+        <div class="sub-con" style="display:none;"></div>
+        <div class="sub-con" style="display:none; margin-left:200px;">
+        	<ul>
+            	<li>
+                	<label class="fl">Address:</label>
+                    <span class="fl">Room 260, Student Apartment 6,</br>
+Beijing University of Posts and Telecommunications,</br>
+No.10 Xi Tu Cheng Road,</br>
+Beijing, 100876, China</p></span>
+                </li>
+                <li>
+                	<label class="fl">Telephone:</label>
+                    <span class="fl">18810466253</span>
+                </li>
+                <li>
+                	<label class="fl">Email:</label>
+                    <span class="fl">lilu.bupt.cn@gmail.com</span>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="footer">Designed by Lu Li | All rights reserved</div>
+</div>
+<script>
+	var tab_nav=$('.nav>ul>li');
+	tab_nav.click(function(){
+		var index=tab_nav.index(this);
+		$('.content .sub-con').eq(index).fadeIn().siblings().fadeOut();	
+	})
+</script>
+</body>
+</html>
